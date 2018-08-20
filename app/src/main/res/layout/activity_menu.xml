@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.co.blogspot.infogabut.daftarmenucafe.MenuActivity">
+
+    <EditText
+        android:id="@+id/jml1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="96dp"
+        android:layout_marginTop="141dp"
+        android:hint="jumlah"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/jml2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jml1"
+        android:layout_toEndOf="@+id/checkBox1"
+        android:hint="jumlah"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/jml3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jml2"
+        android:layout_toEndOf="@+id/checkBox1"
+        android:hint="jumlah"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/jml4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jml3"
+        android:layout_toEndOf="@+id/checkBox1"
+        android:hint="jumlah"
+        android:textSize="15dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/jml1"
+        android:layout_alignBottom="@+id/jml1"
+        android:layout_marginEnd="12dp"
+        android:layout_toStartOf="@+id/jml1"
+        android:text="Original (Rp 5000)" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/jml3"
+        android:layout_alignStart="@+id/checkBox1"
+        android:text="Mocha (Rp 5000)" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/jml4"
+        android:layout_alignStart="@+id/checkBox4"
+        android:text="Cappucino (Rp 5000)" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/jml4"
+        android:layout_alignStart="@+id/checkBox2"
+        android:text="Vanilla (Rp 5000)" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jml4"
+        android:layout_marginTop="36dp"
+        android:layout_toStartOf="@+id/jml4"
+        android:text="Pesan" />
+
+</RelativeLayout>
